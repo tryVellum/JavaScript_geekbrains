@@ -124,7 +124,7 @@ function checkForFruit() {
     xCor.unshift(xCor[0]);
     yCor.unshift(yCor[0]);
     numSegments++;
-    updateFruitCoordinates();
+    updateFruitCoordinates(); // !!!
   }
 }
 
@@ -147,7 +147,7 @@ function keyPressed() {
       }
       break;
     case 76:
-      if (direction !== 'left') {
+      if (direction !== 'left') { // !!!
         direction = 'right';
       }
       break;
